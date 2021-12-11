@@ -1,0 +1,23 @@
+.cover{
+    height: 400px;
+    /*background-image: url("/img/index.jpg");*/
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0, 0.5);
+    background-blend-mode: darken;
+
+}
+.cover h1{
+    color: white;
+}
+body{
+    /*background: #0F2027;  /* fallback for old browsers */
+ 
+
+}
+.logo{
+    width: 80%;
+
+}
+
