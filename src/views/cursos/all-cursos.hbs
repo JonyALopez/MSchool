@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+    {{#each cursos}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{title}} <a href="/cursos/edit/{{_id}}"><i class="far fa-edit"></i></a>
+                </h4>
+                <p>{{description}}</p>
+               <form action="/cursos/delete/{{_id}}?_method=DELETE" method="POST">
+               <input type="hidden" name="_method" value="DELETE">
+                    <button class="btn btn-danger btn-block btn-sm" type="submit">
+                    Eliminar
+                </button>
+               </form>
+
+            </div>
+        </div> 
+    </div>
+    {{else}}  
+    <div class="card mx-auto">
+        <div class="cover d-flex justify-content-center align-items-center flex-column">
+            <h1>
+               Cursos
+           </h1>
+         </div>
+
+    </div>
+
+    {{/each}}
+</div>
+
+
+</div>
+
+
+
+
+
