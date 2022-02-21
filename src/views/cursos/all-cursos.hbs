@@ -18,19 +18,20 @@
             </div>
         </div> 
     </div>
-    {{else}}  
+    {{else}}
     <div class="card mx-auto">
         <div class="cover d-flex justify-content-center align-items-center flex-column">
-            <h1>
-               Cursos
-           </h1>
+            <div class="card-body">
+               <h1> Hola {{user.name}}</h1>
+               <p class="lead">Aun no  se han agregado cursos</p>
+               <a href="/cursos/add" class="btn btn-success btn-block">Crear</a>
+            </div>
          </div>
-
+        
     </div>
 
     {{/each}}
 </div>
-
 
 </div>
 
