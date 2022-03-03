@@ -8,6 +8,9 @@ const methodOveriide = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
+const dotenv= require ('dotenv');
+
+dotenv.config();
 
 
 //Inicia
@@ -53,6 +56,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/cursos'));
 app.use(require('./routes/users'));
 app.use(require('./routes/file'));
+app.use(require('./routes/files'));
 
 
 

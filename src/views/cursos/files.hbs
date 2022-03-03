@@ -1,0 +1,19 @@
+<h1 style="color:aliceblue; text-align:center;" class="primary">Aqui deberian ir los archivos de S3</h1>
+
+<div class="container">
+    <div class="row">
+        {{#each urlKey}}
+        <div class="col">
+            {{#if value}}
+            <video src="https://storage-app-notes.s3.us-east-2.amazonaws.com/{{name}}" width="300" height="300"
+                controls>Video no soportado...</video>
+            {{else}}
+            <img src="https://storage-app-notes.s3.us-east-2.amazonaws.com/{{name}}" width="300" height="300" style="object-fit:cover;"
+                alt="{{name}}" />
+            <a href="https://storage-app-notes.s3.us-east-2.amazonaws.com/{{name}}"
+                style="color:aliceblue;">Descargar</a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>
