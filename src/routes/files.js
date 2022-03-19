@@ -18,20 +18,19 @@ async function getData() {
     for (let index = 0; index < data['Contents'].length; index++) {
         let types = data['Contents'][index]['Key'].slice(-3);
         let values = false;
-        if (types === 'mp4'){
+        if (types === 'mp4') {
             values = true;
         }
-        key.push({name: data['Contents'][index]['Key'], type: types, value: values});
+        key.push({ name: data['Contents'][index]['Key'], type: types, value: values });
     }
     return key;
 }
 
 router.get('/cursos/files', (req, res) => {
     let urlKey = [];
-    (async () => {
+    (async() => {
         urlKey = await getData();
-        console.log(urlKey);
         res.render('cursos/files', { urlKey });
-    })()  
+    })()
 })
 module.exports = router;

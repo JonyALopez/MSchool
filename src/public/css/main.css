@@ -1,23 +1,25 @@
-.cover{
+.cover {
     height: 400px;
-    /*background-image: url("/img/index.jpg");*/
+    background-image: url("/img/img.jpg");
     color: white;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
-
 }
-.cover h1{
+
+.cover h1 {
     color: white;
 }
-body{
+
+body {
     /*background: #0F2027;  /* fallback for old browsers */
- 
-
 }
-.logo{
+
+.logo {
     width: 80%;
-
 }
 
+.cur {
+    flex: 1;
+}
