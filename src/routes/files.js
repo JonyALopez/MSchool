@@ -30,6 +30,7 @@ router.get('/cursos/files', (req, res) => {
     let urlKey = [];
     (async() => {
         urlKey = await getData();
+        console.log("-");
         res.render('cursos/files', { urlKey });
     })()
 })
